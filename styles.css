@@ -1,3 +1,8 @@
 body{
     display: 
 }
+main{
+    hyphens: auto;
+}
+
+@media screen (min-height )
