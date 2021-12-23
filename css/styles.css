@@ -1,0 +1,96 @@
+body, header, main, footer{
+    display: flex;
+    flex-direction: column;
+}
+body{
+    min-height: 100vh;
+    width: 100vw;
+    background: rgb(247, 247, 247);
+    font-family: "Source Sans Pro", sans-serif, monospace;
+}
+header, main, footer{
+    align-items: center;
+    text-align: center;
+}
+main{
+    hyphens: auto; /*This is a good thing to have */
+    flex-grow: 1;
+    min-width: 0;
+    text-align: center;
+    background: white;
+}
+ul{
+    list-style: none;
+    text-align: center;
+    padding: 0;
+    width: 90vw;
+}
+li{
+    background-color: white;
+    margin-bottom: 5px ;
+    padding: 15px;
+}
+a{
+    text-decoration: none;
+    color:black;
+    display: inline-block;
+    font-size: 17px;
+    font-family: "Source Sans Pro";
+    font-weight:900;
+}
+p{
+    width: 90vw;
+    font-weight: 400;
+}
+header p{
+    color:rgb(126, 126, 126)
+}
+footer p{
+    color: rgb(126, 126, 126);
+}
+footer {
+    padding-top: 25px;
+}
+
+#email{
+    padding-bottom: 30px;
+    padding-top: 0;
+    margin-top: 0;
+}
+
+span{
+    color:rgb(63, 63, 63);
+    font-weight: 900;
+}
+h2, h3{
+    font-size: 17px;
+    font-weight:900;
+}
+main h2{
+    padding:20px;
+}
+main p{
+    padding-bottom: 20px;
+}
+#end div h2, a{
+    font-size: 15px;
+}
+.img{
+    width: 90vw;
+}
+#img-1{
+    width: 70%;
+}
+#end{
+    border-top: 1px solid rgb(211, 211, 211);
+    display: flex;
+    align-items: center;
+    width:90vw;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+
+
+
+
