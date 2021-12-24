@@ -90,7 +90,57 @@ main p{
     padding: 10px;
 }
 
+@media screen and (min-width:768px){
+    body{
+        background:white;
+    }
+    header h1{
+        margin-bottom:10px;
+    }
+    header img, p{
+        flex-grow: 1;
+        flex-basis:100px;
+    } 
+    ul{
+        margin-top: 0px;
+        padding-top: 0px;
+        display: flex;
+        justify-content: center;
+    }
+    #row{
+        display: flex;
+        width: 90vw;
+        text-align: left;
+        height: 200px;
+        font-size:20px;
+    }
+    #row img{
+        order:1;
+        flex:1;
+        width: 40vw;
+        height: auto;
 
+    }
+    #row p{
+        flex:2;
+    }
+    main{
+        flex-direction: row;
+        align-items: center
+        
+    }
+    main div{
+        width:45vw;
+    }
+    .img{
+        width:45vw;
+        height: auto;
+    }
+    .col{
+        width:45vw;
+    }
+
+}
 
 
 
