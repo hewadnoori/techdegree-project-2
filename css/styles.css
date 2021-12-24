@@ -7,6 +7,7 @@ body{
     width: 100vw;
     background: rgb(247, 247, 247);
     font-family: "Source Sans Pro", sans-serif, monospace;
+    align-items: center;
 }
 header, main, footer{
     align-items: center;
@@ -87,11 +88,16 @@ main p{
     align-items: center;
     width:90vw;
     justify-content: space-between;
-    padding: 10px;
+    padding-bottom: 10px;
+}
+#bot-nav{
+    display: none;
 }
 
 @media screen and (min-width:768px){
-    
+    header{
+        padding-bottom: 60px;
+    }
     header h1{
         margin-bottom:10px;
     }
@@ -105,30 +111,37 @@ main p{
         display: flex;
         justify-content: center;
     }
-    #row{
+    .row{
         display: flex;
-        width: 90vw;
+        width: 95vw;
         text-align: left;
         height: 200px;
         font-size:20px;
+        padding-top: 30px;
     }
-    #row img{
+    .row img{
         order:1;
         flex:1;
         width: 40vw;
         height: auto;
 
     }
-    #row p{
+    .row p{
         flex:2;
+        margin:0;
     }
     main{
         flex-direction: row;
         align-items: center;
         flex-wrap:wrap;
+        
     }
     main h2{
         width:100vw;
+        padding-top:30px;
+    }
+    main h3{
+        padding-top: 20px;
     }
     main div{
         flex: 1 50%;
@@ -145,13 +158,15 @@ main p{
         
     }
     main div p{
-        width: 45vw;
+        width: 30vw;
         text-align: center;
+        margin-top: 0;
         margin-bottom: auto;
-        padding-bottom: auto;
+        padding:0;
     }   
     #contact{
-        padding-bottom: 15px;
+        padding-bottom: 0px;
+        margin-bottom: 0;
     }
     footer p{
         width: 43vw;
@@ -159,9 +174,95 @@ main p{
         padding-top: 35px;
         flex-basis: 40px;
     }
+    #top{
+        display: none;
+    }
+    #bot-nav{
+        display: flex;
+        display:inline-block;
+        align-items: center;
+        justify-content: center;
+    }
+    #bot-nav ul{
+        width: auto;
+        margin-bottom: 0;
+    }
+    #bot-nav li{
+        padding-right: 0;
+    }
+     li{
+        background: none;
+    }
+    #end{
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 60px;
+    }
 
 }
 @media screen and (min-width:1024px){
-
+    
+    .row2{
+        display: flex;
+        justify-content: space-between;
+        width: 90vw;
+        text-align: left;
+        height: auto;
+        font-size:20px;
+        align-items: center;
+    }
+    .row2 h1{
+        width: 30vw;
+        font-size: 30px;
+        margin: 0;
+    }
+    .row2 nav{
+        width: 30vw;
+        display: flex;
+        justify-content: flex-end;
+    }
+    .row2 ul{
+        justify-content: flex-end;
+        margin:0;
+    }
+     li{
+        padding-right: 0;
+        padding-left: 60px;
+    }
+    .row2 li a{
+        font-size: 18px;
+    }
+    .row{
+        width:90vw;
+        justify-content: space-between;
+    }
+    .row img{
+        height: 30vh;
+    }
+    .row p{
+        font-size:30px;
+    }
+    header{
+        height:45vh;
+    }
+    main{
+      width:86vw;
+      justify-content: space-between; 
+      padding: 2vw; 
+    }
+    main h2{
+        margin-bottom: 35px;
+    } 
+    main .img{
+        width: 27vw;
+    }
+    main div{
+        flex: 1 10%;
+    }
+    main  div p{
+        width: 24vw;
+    }
+    #end{
+        padding-bottom: 0;
+    }
 }
-
